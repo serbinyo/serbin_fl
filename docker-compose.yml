@@ -1,0 +1,49 @@
+# Пропишем версию
+version: '3.3'
+# Перечислим сервисы
+services:
+  nginx:
+    # Пропишем какой образ мы хотим использовать
+    image: nginx:latest
+    # Назовем свой контейнер по красивому
+    container_name: nginx_mysite
+    # Проброс портов
+    ports:
+      - "880:80"
+      - "4443:443"
+    # Проброс папок
+    volumes:
+      - ./docker/Nginx/core:/etc/nginx/conf.d
+      - ./:/var/www/
+      - ./docker/Nginx/Logs:/var/log/nginx/
+    # Укажем зависимости
+    links:
+      - php
+  mariadb:
+    image: mariadb:10.2
+    ports:
+      - "3306:3306"
+    container_name: mariadb_mysite
+    # Пропишем настройки, предлагаю использовать вместо mypassword более сложный пароль, он пренадлежит root
+    environment:
+      - MYSQL_ROOT_PASSWORD=mypassword
+      - MYSQL_DATABASE=site
+      - MYSQL_USER=site
+      - MYSQL_PASSWORD=site
+    volumes:
+      - ./docker/mariadb:/var/lib/mysql
+  php:
+    # Билдим с помощью dockerfile указав директорию где он лежит
+    build: ./docker/PHP
+    container_name: php-fpm_mysite
+    volumes:
+      - ./:/var/www
+    links:
+      - mariadb
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    ports:
+      - 8090:80
+    links:
+      - mariadb:db
