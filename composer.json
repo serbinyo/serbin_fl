@@ -21,6 +21,7 @@
         "docs": "https://docs.flarum.org/"
     },
     "require": {
+        "flarum-lang/russian": "^1.11",
         "flarum/approval": "*",
         "flarum/bbcode": "*",
         "flarum/core": "v1.6.2",
