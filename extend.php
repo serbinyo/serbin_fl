@@ -10,5 +10,8 @@
 use Flarum\Extend;
 
 return [
-    // Register extenders here to customize your forum!
+    (new Extend\Routes('forum'))
+        ->get('/test-route', 'test.index', \App\Controller\HelloWorldController::class),
+    (new Extend\View())
+        ->namespace('test.index', __DIR__.'/views')
 ];
