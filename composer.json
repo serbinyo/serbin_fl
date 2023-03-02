@@ -39,6 +39,7 @@
         "flarum/subscriptions": "*",
         "flarum/suspend": "*",
         "flarum/tags": "*",
+        "fof/gamification": "^1.6",
         "fof/sitemap": "^2.0",
         "v17development/flarum-seo": "^1.8"
     },
