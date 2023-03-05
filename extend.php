@@ -16,5 +16,5 @@ return [
     (new Extend\View())
         ->namespace('philosophy.index', __DIR__.'/views'),
     (new Extend\Frontend('forum'))
-        ->js(__DIR__.'/ext/skeleton/js/dist/forum.js')
+        ->js(__DIR__.'/ext/template.mods/js/dist/forum.js')
 ];
