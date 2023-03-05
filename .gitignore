@@ -13,5 +13,6 @@ docker/mariadb
 docker/MySQL
 *.sql
 *.gz
+node_modules
 
 
