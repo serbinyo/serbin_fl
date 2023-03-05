@@ -9,5 +9,9 @@ core
 studio.json
 composer.lock
 *.log
+docker/mariadb
+docker/MySQL
+*.sql
+*.gz
 
 

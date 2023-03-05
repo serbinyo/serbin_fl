@@ -7,11 +7,12 @@
  * LICENSE file that was distributed with this source code.
  */
 
+use App\Controller\PhilosophyController;
 use Flarum\Extend;
 
 return [
     (new Extend\Routes('forum'))
-        ->get('/test-route', 'test.index', \App\Controller\HelloWorldController::class),
+        ->get('/philosophy', 'philosophy.index', PhilosophyController::class),
     (new Extend\View())
-        ->namespace('test.index', __DIR__.'/views')
+        ->namespace('philosophy.index', __DIR__.'/views'),
 ];

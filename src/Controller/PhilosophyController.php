@@ -13,7 +13,7 @@ use Illuminate\Contracts\View\Factory;
 /**
  *
  */
-class HelloWorldController implements RequestHandlerInterface
+class PhilosophyController implements RequestHandlerInterface
 {
     /**
      * @var Factory
@@ -27,7 +27,7 @@ class HelloWorldController implements RequestHandlerInterface
 
     public function handle(Request $request): Response
     {
-        $view = $this->view->make('test.index::greeting', ['name' => 'serbin']);
+        $view = $this->view->make('philosophy.index::philosophy');
 
         return new HtmlResponse($view->render());
     }
