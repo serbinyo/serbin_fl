@@ -7,8 +7,12 @@
  * LICENSE file that was distributed with this source code.
  */
 
+use App\Controller\PhilosophyController;
 use Flarum\Extend;
 
 return [
-    // Register extenders here to customize your forum!
+    (new Extend\Routes('forum'))
+        ->get('/philosophy', 'philosophy.index', PhilosophyController::class),
+    (new Extend\View())
+        ->namespace('philosophy.index', __DIR__.'/views'),
 ];
