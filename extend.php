@@ -15,4 +15,6 @@ return [
         ->get('/philosophy', 'philosophy.index', PhilosophyController::class),
     (new Extend\View())
         ->namespace('philosophy.index', __DIR__.'/views'),
+    (new Extend\Frontend('forum'))
+        ->js(__DIR__.'/ext/skeleton/js/dist/forum.js')
 ];
