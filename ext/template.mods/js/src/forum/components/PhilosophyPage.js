@@ -11,7 +11,7 @@ export default class PhilosophyPage extends Page {
               <h1 className="h1">Философия ProgUnity</h1>
               <ul className="philosophy-list">
 
-                <li><p><strong>1</strong>: Тут нет места снобизму и ценизму. Также мы не поощряем лень. </p></li>
+                <li><p><strong>1</strong>: Тут нет места снобизму и цинизму. Также мы не поощряем лень. </p></li>
 
                 <li><p><strong>2</strong>: Если ты готов учиться, то спрашивай. </p></li>
 
