@@ -13,5 +13,5 @@ return [
     (new Extend\Frontend('forum'))
         ->js(__DIR__.'/ext/template.mods/js/dist/forum.js')
         ->css(__DIR__.'/ext/template.mods/js/css/style.css')
-        ->route('/philosophy', 'progunity.philosophy')
+        ->route('/about', 'progunity.about')
 ];

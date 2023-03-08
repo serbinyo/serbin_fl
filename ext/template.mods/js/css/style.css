@@ -1,10 +1,10 @@
 .Header-primary {
-  margin-top: 8px;
+  margin-top: 11px;
   font-family: "Arial", serif;
   font-size: medium;
   margin-left: 20px;
 }
 
-.philosophy-list {
-  font-size: medium;
+.Header-controls a{
+  color: #667c99;
 }
