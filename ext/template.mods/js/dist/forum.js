@@ -2,28 +2,28 @@
 /******/ 	// runtime can't be in strict mode because a global variable is assign and maybe created.
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/forum/components/IdeologyPage.js":
-/*!**********************************************!*\
-  !*** ./src/forum/components/IdeologyPage.js ***!
-  \**********************************************/
+/***/ "./src/forum/components/AboutPage.js":
+/*!*******************************************!*\
+  !*** ./src/forum/components/AboutPage.js ***!
+  \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ IdeologyPage)
+/* harmony export */   "default": () => (/* binding */ AboutPage)
 /* harmony export */ });
 /* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
 /* harmony import */ var flarum_forum_components_DiscussionPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! flarum/forum/components/DiscussionPage */ "flarum/forum/components/DiscussionPage");
 /* harmony import */ var flarum_forum_components_DiscussionPage__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(flarum_forum_components_DiscussionPage__WEBPACK_IMPORTED_MODULE_1__);
 
 
-var IdeologyPage = /*#__PURE__*/function (_DiscussionPage) {
-  (0,_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(IdeologyPage, _DiscussionPage);
-  function IdeologyPage() {
+var AboutPage = /*#__PURE__*/function (_DiscussionPage) {
+  (0,_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(AboutPage, _DiscussionPage);
+  function AboutPage() {
     return _DiscussionPage.apply(this, arguments) || this;
   }
-  var _proto = IdeologyPage.prototype;
+  var _proto = AboutPage.prototype;
   _proto.view = function view() {
     return m("div", null, m("header", {
       className: "Hero DiscussionHero DiscussionHero--colored",
@@ -52,7 +52,7 @@ var IdeologyPage = /*#__PURE__*/function (_DiscussionPage) {
       style: "list-style-type:decimal"
     }, m("li", null, "\u0412 \u0441\u043E\u043E\u0431\u0449\u0435\u0441\u0442\u0432\u0435 \u043C\u044B \u0446\u0435\u043D\u0438\u043C \u0443\u0432\u0430\u0436\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u0435 \u0434\u0440\u0443\u0433 \u043A \u0434\u0440\u0443\u0433\u0443, \u0438 \u043D\u0435 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u043C \u043D\u0435\u0433\u0430\u0442\u0438\u0432\u043D\u044B\u0435 \u043F\u0440\u043E\u044F\u0432\u043B\u0435\u043D\u0438\u044F, \u0442\u0430\u043A\u0438\u0435 \u043A\u0430\u043A \u0441\u043D\u043E\u0431\u0438\u0437\u043C \u0438 \u0446\u0438\u043D\u0438\u0437\u043C. \u041C\u044B \u0442\u0430\u043A\u0436\u0435 \u043F\u043E\u043E\u0449\u0440\u044F\u0435\u043C \u0430\u043A\u0442\u0438\u0432\u043D\u043E\u0435 \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435 \u0438 \u043D\u0435 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u043C \u043B\u0435\u043D\u044C."), m("li", null, "\u0415\u0441\u043B\u0438 \u043A\u0442\u043E-\u0442\u043E \u0437\u0430\u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043E\u0432\u0430\u043D \u0432 \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0438, \u043C\u044B \u0432\u0441\u0435\u0433\u0434\u0430 \u0433\u043E\u0442\u043E\u0432\u044B \u043F\u043E\u043C\u043E\u0447\u044C \u0438 \u043E\u0442\u0432\u0435\u0442\u0438\u0442\u044C \u043D\u0430 \u0432\u043E\u043F\u0440\u043E\u0441\u044B."), m("li", null, "\u0412 \u043D\u0430\u0448\u0435 \u0432\u0440\u0435\u043C\u044F \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442 \u043C\u043D\u043E\u0436\u0435\u0441\u0442\u0432\u043E \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0445 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0439 \u0438 \u043F\u043E\u0434\u0445\u043E\u0434\u043E\u0432, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043C\u043E\u0433\u0443\u0442 \u0437\u0430\u043F\u0443\u0442\u0430\u0442\u044C. \u041C\u044B \u0441\u043E\u0437\u0434\u0430\u043B\u0438 \u0441\u043E\u043E\u0431\u0449\u0435\u0441\u0442\u0432\u043E, \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u043C\u043E\u0447\u044C \u0434\u0440\u0443\u0433 \u0434\u0440\u0443\u0433\u0443 \u043E\u0432\u043B\u0430\u0434\u0435\u0442\u044C \u043D\u0443\u0436\u043D\u044B\u043C\u0438 \u0437\u043D\u0430\u043D\u0438\u044F\u043C\u0438."), m("li", null, "\u041D\u0430\u0448\u0430 \u0446\u0435\u043B\u044C \u043D\u0435 \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u0430 \u043A \u0447\u0442\u0435\u043D\u0438\u044E \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0430\u0446\u0438\u0438, \u043F\u043E\u0442\u043E\u043C\u0443 \u0447\u0442\u043E \u043C\u044B \u043F\u043E\u043D\u0438\u043C\u0430\u0435\u043C, \u043A \u044D\u0442\u043E\u043C\u0443 \u043D\u0443\u0436\u043D\u043E \u043F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C."), m("li", null, "\u0423 \u043D\u0430\u0441 \u043D\u0435\u0442 \u043C\u0430\u043D\u0438\u0438 \u0432\u0435\u043B\u0438\u0447\u0438\u044F \u0438 \u043C\u044B \u043D\u0435 \u0441\u0430\u043C\u043E\u0437\u0432\u0430\u043D\u0446\u044B, \u043C\u044B \u0432\u0441\u0435\u0433\u0434\u0430 \u0433\u043E\u0442\u043E\u0432\u044B \u0443\u0447\u0438\u0442\u044C\u0441\u044F \u0438 \u0441\u043E\u0432\u0435\u0440\u0448\u0435\u043D\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C\u0441\u044F."), m("li", null, "\u041C\u044B \u043D\u0435 \u043E\u0442\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u043C\u0441\u044F \u043E\u0442 \u0441\u0432\u043E\u0438\u0445 \u0446\u0435\u043B\u0435\u0439."), m("li", null, "\u0412 \u0441\u043E\u043E\u0431\u0449\u0435\u0441\u0442\u0432\u0435 \u043C\u044B \u0441\u0447\u0438\u0442\u0430\u0435\u043C, \u0447\u0442\u043E \u043E\u0448\u0438\u0431\u043A\u0438 - \u044D\u0442\u043E \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0434\u043B\u044F \u0440\u043E\u0441\u0442\u0430 \u0438 \u0443\u043B\u0443\u0447\u0448\u0435\u043D\u0438\u044F.")))));
   };
-  return IdeologyPage;
+  return AboutPage;
 }((flarum_forum_components_DiscussionPage__WEBPACK_IMPORTED_MODULE_1___default()));
 
 
@@ -72,23 +72,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var flarum_forum_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(flarum_forum_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var flarum_forum_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! flarum/forum/app */ "flarum/forum/app");
 /* harmony import */ var flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(flarum_forum_app__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_IdeologyPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/IdeologyPage */ "./src/forum/components/IdeologyPage.js");
+/* harmony import */ var _components_AboutPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/AboutPage */ "./src/forum/components/AboutPage.js");
 
 
 
 
-flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default().initializers.add('ideology-page', function () {
+flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default().initializers.add('about-page', function () {
   //add link to header
   (0,flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__.extend)((flarum_forum_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_1___default().prototype), 'items', function (items) {
-    items.add('ideology', m("a", {
-      href: "/ideology"
+    items.add('about', m("a", {
+      href: "/about"
     }, m("strong", null, "\u041E \u043D\u0430\u0441")));
   });
 
   //add route
-  (flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default().routes.philosophy) = {
-    path: '/ideology',
-    component: _components_IdeologyPage__WEBPACK_IMPORTED_MODULE_3__["default"]
+  (flarum_forum_app__WEBPACK_IMPORTED_MODULE_2___default().routes.about) = {
+    path: '/about',
+    component: _components_AboutPage__WEBPACK_IMPORTED_MODULE_3__["default"]
   };
 });
 
