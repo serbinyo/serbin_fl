@@ -15,7 +15,7 @@ return [
     (new Extend\Frontend('forum'))
         ->js(__DIR__ . '/ext/template.mods/js/dist/forum.js')
         ->css(__DIR__ . '/ext/template.mods/js/css/style.css')
-        ->route('/about', 'progunity.about')
+        ->route('/about', 'progunity.about'),
     //Yandex Metrika
     (new Extend\Frontend('forum'))
         ->content(function (Document $document) {
@@ -36,5 +36,5 @@ return [
             </script>
             <noscript><div><img src="https://mc.yandex.ru/watch/92928829" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
             <!-- /Yandex.Metrika counter -->';
-        }),
+        })
 ];
