@@ -21,6 +21,7 @@
         "docs": "https://docs.flarum.org/"
     },
     "require": {
+        "finteger/guest": "^1.3",
         "flarum-lang/russian": "^1.11",
         "flarum/approval": "*",
         "flarum/bbcode": "*",
