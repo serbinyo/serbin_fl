@@ -1,21 +1,19 @@
-# Пропишем версию
 version: '3.3'
-# Перечислим сервисы
+
 services:
   nginx:
-    # Пропишем какой образ мы хотим использовать
     image: nginx:latest
     # Назовем свой контейнер по красивому
-    container_name: nginx_mysite
+    container_name: nginx_progunity
     # Проброс портов
     ports:
-      - "880:80"
+      - "80:80" # flarum не показывает js и css если в урл есть порт
       - "4443:443"
     # Проброс папок
     volumes:
-      - ./docker/Nginx/core:/etc/nginx/conf.d
-      - ./:/var/www/
-      - ./docker/Nginx/Logs:/var/log/nginx/
+      - ./Nginx/core:/etc/nginx/conf.d
+      - ../:/var/www/
+      - ./Nginx/Logs:/var/log/nginx/
     # Укажем зависимости
     links:
       - php
@@ -23,21 +21,21 @@ services:
     image: mariadb:10.2
     ports:
       - "3306:3306"
-    container_name: mariadb_mysite
+    container_name: mariadb_progunity
     # Пропишем настройки, предлагаю использовать вместо mypassword более сложный пароль, он пренадлежит root
     environment:
-      - MYSQL_ROOT_PASSWORD=mypassword
-      - MYSQL_DATABASE=site
-      - MYSQL_USER=site
-      - MYSQL_PASSWORD=site
+      - MARIADB_ROOT_PASSWORD=devroot
+      - MARIADB_DATABASE=progunity_dev
+      - MARIADB_USER=serbin
+      - MARIADB_PASSWORD=serbin_password
     volumes:
-      - ./docker/mariadb:/var/lib/mysql
+      - ./mariadb:/var/lib/mysql
   php:
     # Билдим с помощью dockerfile указав директорию где он лежит
-    build: ./docker/PHP
-    container_name: php-fpm_mysite
+    build: ./PHP
+    container_name: php-fpm_progunity
     volumes:
-      - ./:/var/www
+      - ../:/var/www
     links:
       - mariadb
   phpmyadmin:
