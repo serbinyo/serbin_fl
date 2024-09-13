@@ -8,7 +8,6 @@ services:
     # Проброс портов
     ports: # flarum не показывает js и css если в урл есть порт
       - "80:80"
-      - "443:443"
     # Проброс папок
     volumes:
       - ./Nginx/core:/etc/nginx/conf.d
